@@ -22,7 +22,7 @@ html {
 body {
   background: var(--clr-light);
   margin: 0 auto;
-  width: 50vw;
+  width: 55vw;
   /* border: 10px solid red; */
   display: flex;
   flex-direction: column;
@@ -79,8 +79,8 @@ body {
 
 
 
-/* CSS */
-button {
+
+.book-form button {
   align-items: center;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -92,9 +92,28 @@ button {
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  min-height: 3rem;
   padding: 6px 10px;
   margin-top: 10px;
-
+}
+.book-element.book-head{
+  font-weight: 600;
+}
+.book-element {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 10px 5px;
 }
 
+.book-element button{
+  padding: 3px;
+  width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--clr-lighter);
+
+}
+#delete {
+  background-color: rgb(170, 32, 32);
+  font-weight: bold;
+
+}
