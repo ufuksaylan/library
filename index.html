@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>libray</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title">Library</div>
+    <div class="library-log">
+      <h3>Library Log</h3>
+      <p>Total books count: <span>0</span></p>
+      <p>Read: <span>0</span></p>
+      <p>Not read: <span>0</span></p>
+    </div>
+  </div>
+
+  <form class="book-form">
+    <div class="form-element">
+      <label for="book">Book</label>
+      <input type="text" name="book" id="book" required>
+    </div>
+    <div class="form-element">
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" required>
+    </div>
+    <div class="form-element">
+      <label for="status">Status</label>
+      <select name="status" id="status">
+        <option value="read" selected="selected">read</option>
+        <option value="not read">not read</option>
+      </select>
+    </div>
+    <div class="submit">
+      <button>Submit</button>
+    </div>
+  </form>
+
+  <div class="books">
+    <p>Name</p>
+    <p>Author</p>
+    <p>status</p>
+  </div>
+</body>
+</html>
